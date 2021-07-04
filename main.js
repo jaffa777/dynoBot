@@ -9,7 +9,7 @@ const hooks = require(base + "/src/core/utils/hooks");
 const scriptWrapper = require(base + "/src/core/utils/scriptWrapper");
 const permissionHandler = require(base + "/src/core/utils/permissionHandler");
 const {DiscordBot} = require("dynobot-framework");
-const Bot = new DiscordBot(security.token);
+const Bot = new DiscordBot(process.env.token);
 
 Bot.onEvent("ready", () => {
 	logger.info("Bot successfully started.");
