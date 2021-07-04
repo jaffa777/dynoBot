@@ -28,8 +28,7 @@
 		"node": ">= 14.x"
 	},
 	"scripts": {
-		"start": "node main.js",
-		"validate": "eslint --ext .js src"
+		"start": "node main.js"
 	},
 	"repository": {
 		"type": "git",
